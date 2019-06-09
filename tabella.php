@@ -1,15 +1,20 @@
 <?php
 
+
+ini_set('error_reporting', E_ALL & ~E_DEPRECATED & ~E_STRICT);
+ini_set('display_errors', 0); // disabilita la visualizzazione degli errori a schermo.
+ini_set('log_errors', 0); // disabilita il log degli errori.
 $lavoro= $_POST["lavoro"];
 $citta= $_POST["citta"];
-
+set_time_limit(180);
 
  
 $x=10;
 $k=0;
 
-session_start();
-
+	require_once('phpCache.php');
+	$cache = new PhpCache(20,'cache/');
+	$cache->start();
 ?>
 
 
@@ -179,7 +184,7 @@ function showPage() {
                            <?php
 
 
-while($x <= 50) {
+while($x <= 30) {
 
 	$cittaSpazi=str_replace(" ", "+", $citta);
 	$cittaApostrofi=str_replace("'", "%27", $cittaSpazi);
@@ -424,7 +429,7 @@ function tagliaCodice2($stringa) {
 return $appoggio;
 }
  
- 
+$cache->stop();
 ?>
 
       </tbody>
