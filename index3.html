@@ -119,7 +119,7 @@
 					<h2 class="title">Trova Annunci</h2>
 				</div>
               <div>
-				<form action="tabella.php" method="post">
+				<form action="visualizzaAnnunci.php" method="post">
 					<div class="form-group row">
 					  <div class="col-xs-4">
 						<label for="ex1">Lavoro</label>
@@ -175,7 +175,7 @@
 							</div>
 					  
 					  <div class="col-xs-4">
-							<label for="ex2">Visualizza per</label>
+							<label for="ex2">Ordina per</label>
 							<select class="form-control chosen" data-placeholder="Choose an option please" name="ordine">                     
 								<option value="dRecente" >DATA PUBBLICAZIONE (recente)</option>
 								<option value="dLontana" >DATA PUBBLICAZIONE (lontana)</option>
@@ -187,6 +187,51 @@
 				  </form>
 				 </div>
 
+				</div>
+				<!-- /Section header -->
+              <!-- //////////// QUI DENTRO DEVO INSERIRE LA BARRA DI RICERCA PER I LAVORI //////////// -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /About -->
+
+	<!-- About -->
+	<div id="about" class="section md-padding bg-success">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Trova Agenzie per il Lavoro</h2>
+				</div>
+              <div>
+				<form action="visualizzaAgenzie.php" method="post">
+					<div class="form-group row">
+					  
+					  <div class="col-xs-4">
+							<label for="ex2">Seleziona Provincia</label>
+							<select class="form-control chosen" data-placeholder="Choose an option please" name="provincia">                     
+								<option value="AV" >AVELLINO</option>
+								<option value="BN" >BENEVENTO</option>
+								<option value="CE" >CASERTA</option>
+								<option value="NA" >NAPOLI</option>
+								<option value="SA" >SALERNO</option>
+
+							  </select>
+						  </div>
+						  <br>
+						  <button type="submit" class="btn btn-info">Cerca</button>
+
+				  </form>
 				</div>
 				<!-- /Section header -->
               <!-- //////////// QUI DENTRO DEVO INSERIRE LA BARRA DI RICERCA PER I LAVORI //////////// -->
