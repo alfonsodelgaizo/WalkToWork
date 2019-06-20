@@ -139,11 +139,13 @@ function showPage() {
 		 <!-- /Nav -->
 
 
-	   <div  id="over" class="header-wrapper sm-padding bg-grey">
-       <img src="./img/walk1.png" width="300" height="350">	
-       </div>  
-		<!-- /header wrapper -->
+     <div  id="over" class="header-wrapper sm-padding  bg-grey ">
+					<img class="js-tilt" src="./img/walk1.png" width="300" height="350" alt="IMG" data-tilt>
+				</div>
+    <!-- /header wrapper -->
+    
 
+  
 	</header>
 	<!-- /Header -->
 
@@ -517,7 +519,15 @@ $cache->stop();
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  
+
+  <script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
 
 </body>
 
