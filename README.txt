@@ -18,6 +18,7 @@ CARICAMENTO AGENZIE
 1) Avvia server Node : caricamentoAgenzie.js (da terminale raggiungere la cartella in cui lo script è salvato e chiamare il comando da shell : node caricamentoAgenzie.js )
 2) Avvia Script : localhost/Aquire/leggiJSON.php
 
+
 CARICAMENTO BANDI 
 
 1) Avvia lo script localhost/Acquire/ScrapeDBGazzetta.php (modificando in file_get_contents l'URL della pagina della gazzetta da caricare)
